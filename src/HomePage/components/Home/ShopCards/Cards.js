@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fetchJsonp from "fetch-jsonp";
 
 export default class Cards extends Component {
     constructor(props) {
@@ -72,7 +73,7 @@ export default class Cards extends Component {
 
             renderMe = (
               <div className="container-fluid shop-cards-wrapper" id="shop-by-category">
-                <h2 className="title">Shop by category</h2>
+                  <h2 className="shop-cards-title">Shop by category</h2>
                 <div className="row" id="shop-by-category-cards">
                   {render}
                 </div>
@@ -83,7 +84,7 @@ export default class Cards extends Component {
             renderMe = (
 
               <div className="container-fluid shop-cards-wrapper" id="shop-by-category">
-                <h2 className="title">Shop for gifts</h2>
+                <h2 className="shop-cards-title">Shop for gifts</h2>
                 <div className="row" id="shop-by-category-cards">
                     <div className="col-md-2 items padding">
                       <a href="https://www.etsy.com/featured/summer-gifts-under-30?ref=hp_g">
@@ -144,8 +145,7 @@ export default class Cards extends Component {
     }
 
     componentWillMount() {
-        let categoryImages = "https://api.etsy.com/v2/listings/trending?api_key=3yhxu7gn2ot24so9hzuqbxc9&limit=80&includes=MainImage";
-        fetch(categoryImages)
+        fetchJsonp("https://api.etsy.com/v2/listings/trending.js?callback=getData&api_key=3yhxu7gn2ot24so9hzuqbxc9&limit=80&includes=MainImage")
             .then (response => response.json())
             .then (response => {
               let tempArr = [];

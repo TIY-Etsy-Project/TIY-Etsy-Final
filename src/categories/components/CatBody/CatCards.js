@@ -19,20 +19,22 @@ class CatCard extends Component {
       });
     let randomListing = filteredListings[Math.floor(Math.random() * filteredListings.length)];
         return (
-          <div key={randomListing.listing_id} >
-            <div className="catCards card" >
-              <a href={randomListing.url}><img className="card-img-top" src={randomListing.MainImage.url_170x135} alt="random jewelry" /></a>
-              <div className="card-block">
-                <h2 className="card-title">
-                  <a className="catTitleLink" href={"https://www.etsy.com/c/" + listing.category.path}>{listing.category.name}</a>
-                </h2>
+          <div className="category-card-column">
+            <div key={randomListing.listing_id} >
+              <div className="card catCards" >
+                <a href={randomListing.url}><img className="card-img-top" src={randomListing.MainImage.url_170x135} alt="random jewelry" /></a>
+                <div className="card-block">
+                  <h2 className="card-title">
+                    <a className="catTitleLink" href={"https://www.etsy.com/c/" + listing.category.path}>{listing.category.name}</a>
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         )
     })
     return (
-      <div className="row">
+      <div className = "cat-card-row">
         {catCard}
       </div>
     )

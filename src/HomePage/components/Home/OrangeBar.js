@@ -15,7 +15,7 @@ export default class OrangeBar extends Component {
    chooseBar() {
     if (this.props.type === "safety") {
       return (
-        <div className=" row safeContainer">
+        <div className="row safeContainer">
           <div className="col-2 safeImage">
             <img className="safeImage" src="https://www.etsy.com/assets/dist/images/homepage/vesta/trust_wide_left.20170228151449.png" alt="a safe"/>
           </div>
@@ -89,7 +89,7 @@ export default class OrangeBar extends Component {
 
     render(){
         return (
-            <div className="container">
+            <div className="container-fluid">
                 {this.chooseBar()}
       </div>
     );

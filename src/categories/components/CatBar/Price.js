@@ -7,36 +7,36 @@ class Price extends React.Component {
 
   render() {
     return (
-      <form className="itemTypeContainer">
-        <div className="itemTypeColumn">
-          <div className="priceTitle">
+      <form className="price-container">
+        <div className="-column">
+          <div className="price-title">
             <label>
               Price ($)
             </label>
           </div>
-          <div className="radioPrice">
-            <input type="radio" value="anyPrice" checked={this.props.selectedOption === 'anyPrice'} onChange={this.props.handleOptionChange}/>
-            <label><span></span>&#160;&#160;Any price</label>
+          <div className="radio-container">
+            <input className="radio-button" type="radio" name="anyPrice" value="anyPrice" checked={this.props.selectedOption === 'anyPrice'} onChange={this.props.handleOptionChange}/>
+            <label className="radio-label" htmlFor="anyPrice"><span></span>Any price</label>
           </div>
-          <div className="radioPrice">
-              <input type="radio"  value="underTwentyFive" checked={this.props.selectedOption === 'underTwentyFive'} onChange={this.props.handleOptionChange}/>
-              <label><span></span>&#160;&#160;Under $25</label>
+          <div className="radio-container">
+              <input className="radio-button" type="radio"  name="underTwentyFive" value="underTwentyFive" checked={this.props.selectedOption === 'underTwentyFive'} onChange={this.props.handleOptionChange}/>
+              <label className="radio-label" htmlFor="underTwentyFive"><span></span>Under $25</label>
           </div>
-          <div className="radioPrices">
-              <input type="radio"  value="twentyFivetoFifty" checked={this.props.selectedOption === 'twentyFivetoFifty'} onChange={this.props.handleOptionChange}/>
-              <label ><span></span>&#160;&#160;$25 to $50</label>
+          <div className="radio-container">
+              <input className="radio-button" type="radio"  name="twentyFivetoFifty" value="twentyFivetoFifty" checked={this.props.selectedOption === 'twentyFivetoFifty'} onChange={this.props.handleOptionChange}/>
+              <label className="radio-label" htmlFor="twentyFivetoFifty"><span></span>$25 to $50</label>
           </div>
-          <div className="radioPrice">
-              <input type="radio" value="fiftyToOneHundred" checked={this.props.selectedOption === 'fiftyToOneHundred'} onChange={this.props.handleOptionChange}/>
-              <label><span></span>&#160;&#160;$50 to $100</label>
+          <div className="radio-container">
+              <input className="radio-button" type="radio" name="fiftyToOneHundred" value="fiftyToOneHundred" checked={this.props.selectedOption === 'fiftyToOneHundred'} onChange={this.props.handleOptionChange}/>
+              <label className="radio-label" htmlFor="fiftyToOneHundred"><span></span>$50 to $100</label>
           </div>
-          <div className="radioPrice">
-              <input type="radio" value="overOneHundred" checked={this.props.selectedOption === 'overOneHundred'} onChange={this.props.handleOptionChange}/>
-              <label ><span></span>&#160;&#160;Over $100</label>
+          <div className="radio-container">
+              <input className="radio-button" type="radio" name="overOneHundred" name="overOneHundred" checked={this.props.selectedOption === 'overOneHundred'} onChange={this.props.handleOptionChange}/>
+              <label className="radio-label" htmlFor="overOneHundred"><span></span>Over $100</label>
           </div>
-          <div className="radioPrice">
-              <input type="radio"  value="custom" />
-              <label><span></span>&#160;&#160;Custom</label>
+          <div className="radio-container">
+              <input className="radio-button" type="radio"  name="custom" value="custom" />
+              <label className="radio-label" htmlFor="custom"><span></span>&#160;&#160;Custom</label>
           </div>
           <div className="priceInputContainer">
             <input className="customPriceForm" type="text" placeholder="  Low"/>

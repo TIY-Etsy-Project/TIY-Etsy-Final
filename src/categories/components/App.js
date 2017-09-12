@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import '../styles/App.css';
 
+
 import AllCategories from './CatBar/AllCategories.js';
 import Color from './CatBar/Color.js';
 import ItemType from './CatBar/ItemType.js';
@@ -18,8 +19,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2 className="allCatTitle">All categories</h2>
-        <div className="container-fluid row">
+        <div className="container-fluid app-container">
+          <div className="category-header">
+            <h2 className="allCatTitle">All categories</h2>
+          </div>
           <CatBar />
         </div>
       </div>

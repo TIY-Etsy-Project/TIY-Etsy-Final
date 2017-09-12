@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
+import fetchJsonp from "fetch-jsonp";
 
 import CatCard from './CatBody/CatCards.js';
 import DetailedCatCard from './CatBody/DetailedCatCards.js';
 
 import '../styles/CatBody.css';
-
+import "../styles/spinner.css";
 
 class CatBody extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      listings: []
+      listings: [],
+      loading: true
     }
   };
 
   componentDidMount() {
-    fetch('https://api.etsy.com/v2/listings/trending?api_key=3yhxu7gn2ot24so9hzuqbxc9&explicit=1&amp;min=&amp;max=&amp;price_bucket=1&amp;use_mmx=1&&limit=100&offset=0&page=1&category=clothing&category=Accessories&category=paper_party_supplies&category=weddings&bags_and_purses&category=art_and_collectibles&category=jewelry&category=home_and_living&category=craft_supplies_and_tools&sort_on=score&sort_order=down&includes=MainImage')
+    fetchJsonp('https://api.etsy.com/v2/listings/trending.js?callback=getData&api_key=3yhxu7gn2ot24so9hzuqbxc9&explicit=1&amp;min=&amp;max=&amp;price_bucket=1&amp;use_mmx=1&&limit=100&offset=0&page=1&category=clothing&category=Accessories&category=paper_party_supplies&category=weddings&bags_and_purses&category=art_and_collectibles&category=jewelry&category=home_and_living&category=craft_supplies_and_tools&sort_on=score&sort_order=down&includes=MainImage')
     .then(resp => {
       return resp.json()
     })
@@ -158,20 +160,18 @@ class CatBody extends Component {
           }}
         ];
           return (
-            <div className = "catBodyContainer">
+            <div>
               {this.state.listings.length > 0 ? (
-              <div>
-                <div>
+              <div className = "container catBodyContainer">
+                <div className="row detailed-card-row">
                   <DetailedCatCard detailedCategories={detailedCategories}
                                    etsyListings={this.state.listings} />
-                  </div>
-                <div className = "catCardRow row">
-                  <CatCard categories={categories}
+                </div>
+                <CatCard categories={categories}
                            etsyListings={this.state.listings} />
                 </div>
-              </div>
               ) : (
-              <div>Loading</div>
+              <div className="lds-spinner"></div>
               )}
             </div>
           )

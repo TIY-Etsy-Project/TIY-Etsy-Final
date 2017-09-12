@@ -9,7 +9,7 @@ export default class PageCounter extends Component {
     this.state =  {
      currentPage:"Numbered Pages",
      pages: [
-       {'page': '...', 'link': 'https://www.etsy.com/c?explicit=1&page=1'},
+       {'page': <i className="glyphicon glyphicon-chevron-left"/>, 'link': 'https://www.etsy.com/c?explicit=1&page=1'},
        {'page': '1', 'link': 'https://www.etsy.com/c?explicit=1&page=1'},
        {'page': '2', 'link': 'https://www.etsy.com/c?explicit=1&page=2'},
        {'page': '3', 'link': 'https://www.etsy.com/c?explicit=1&page=3'},
@@ -73,21 +73,21 @@ export default class PageCounter extends Component {
       (this.setState({ columnsToDisplay: this.state.pages.length, expanded: true })) :
       (this.setState({ columnsToDisplay: 30, expanded: false }))
   }
-  
+
 
   render() {
     return (
     <div className="pageContainer">
       <div className="counterRow">
         <div className="pageBox">
-          {this.state.pages.slice(0,this.state.columnsToDisplay).map((pages, i) => <li key={i}><a className="links" href={pages.link}>{pages.page}</a></li>)}
+          {this.state.pages.slice(0,this.state.columnsToDisplay).map((pages, i) => <div className="links" key={i}><a href={pages.link}>{pages.page}</a></div>)}
+          <div className="links" id="show">
+            <a onClick={this.showMore}>
+              {this.state.expanded ?
+                (<span><i className="glyphicon glyphicon-chevron-right"/></span>) : (<span><i className="glyphicon glyphicon-chevron-right"/></span>)}
+            </a>
+          </div>
         </div>
-      <p>
-        <a onClick={this.showMore}>
-          {this.state.expanded ?
-            (<span className="show">...</span>) : (<span className="show">...</span>)}
-        </a>
-      </p>
       </div>
     </div>
     )

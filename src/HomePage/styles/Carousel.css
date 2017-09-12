@@ -7,6 +7,13 @@
   font-family: serif;
 }
 
+.a-tags {
+  color: #323232;
+}
+
+.a-tags {
+  text-decoration: none;
+}
 .carousel-item h2 {
   text-align: left;
   padding-left: 0;
@@ -14,14 +21,15 @@
   padding-bottom: 30px;
   color: #323232;
   font-weight: 100;
-  font-size: 52px;
+  font-size: 3.5em;
   font-family: serif;
 }
 
-.carousel-caption {
-  width: 40%;
+.carousel-text.carousel-caption{
+  width: 35%;
   text-align: left;
   left: 10%;
+  text-shadow: none;
 }
 
 .image-background {
@@ -32,7 +40,7 @@
   transform: translateX(-50%);
 }
 
-.button {
+.carousel-button {
   border-color: black;
   background-color: transparent;
   box-shadow: none;
@@ -41,14 +49,20 @@
   border-radius: 3px;
   border-style: solid;
   font-family: sans-serif;
+  text-align: left;
 }
 
-.button:hover {
+.carousel-button:hover {
   background-color: #F56400;
   border-color: #F56400;
   border-style: solid;
   color: white;
   box-shadow: none;
+}
+
+.summer-button {
+  border-color: white;
+  color: white;
 }
 
 .carousel-icons {

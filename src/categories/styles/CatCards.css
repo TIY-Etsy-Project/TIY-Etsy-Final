@@ -1,7 +1,17 @@
+.cat-card-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 917px;
+  justify-content: space-between;
+  margin: 0px;
+}
+.category-card-column {
+  column-width: 165px;
+}
+
 .catCards {
-  width: 13vw;
-  padding: none;
-  margin: 0 2.1vw 2vw 0;
+  width: 165px;
+  margin-bottom: 0px;
 }
 
 .card {

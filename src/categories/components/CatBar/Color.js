@@ -44,13 +44,13 @@ export default class Color extends Component {
     return(
       <form className="colorContainer">
         <div className="colorColumn">
+          <h3 className="color-title">Color</h3>
           <ul className="colorList">
             {this.state.colors.slice(0,this.state.rowsToDisplay).map((colors, i) =>
               <li key={i} className="colorListItem">
                 <input type="checkbox" name="colorCheckBox"/>
                 <label htmlFor="colorCheckBox" className="colorLabels">
-                  <span></span>
-                  <a className="colorListItem" href={colors.link}>&#160;&#160;{colors.color}</a>
+                  <a className="colorListItem" href={colors.link}><span></span>&#160;&#160;&#160;&#160;&#160;{colors.color}</a>
                 </label>
               </li>)}
           </ul>

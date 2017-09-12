@@ -7,7 +7,7 @@ class Search extends Component {
       <div className=" navTop">
         <div className="searchBar">
           <div className="logo">
-            <a className="navbar-brand" href="https://www.etsy.com/?ref=lgo">
+            <a className="navbar-brand etsy-logo-container" href="https://www.etsy.com/?ref=lgo">
               <img
                 alt="Etsy Logo"
                 className="etsyLogo"

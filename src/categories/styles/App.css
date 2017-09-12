@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #FFFFFF;
+  text-align: left;
 }
 
 .App-logo {
@@ -18,14 +19,17 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*.app-container {
+  margin: 0px!important;
+}*/
+
+.category-header {
+  width: 100vw;
 }
 
 .allCatTitle {
   font-size: 2em;
   color: #474747;
-  margin: 2em 0 .7em 1.7em;
   text-align: left;
+  margin: 3vw 0 1.5vw 1.5vw;
 }

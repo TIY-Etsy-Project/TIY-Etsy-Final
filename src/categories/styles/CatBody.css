@@ -1,8 +1,17 @@
+
+
 .catBodyContainer {
+  width: 900px;
   padding: 5px;
-  margin: 0 3vw 10vw 23vw;
+  margin: 0 2.5vw 1vw 2.5vw;
 }
 
 .catCardRow {
   margin-left: 1vw;
+}
+
+.card-column {
+  width: 1000px!important;
+  padding: 0px;
+  margin: 0px;
 }

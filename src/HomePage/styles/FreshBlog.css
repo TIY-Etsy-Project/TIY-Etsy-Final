@@ -4,11 +4,11 @@
   padding: 0 3% 0 3%;
 }
 
-.card {
+.fresh-blog-card {
   border: 0;
 }
 
-.card-block {
+.fresh-blog-card-block {
   padding: 0;
   background-color: #FAF9F5;
 }
@@ -72,14 +72,14 @@
 
 }
 
-a {
-  color: black;
+.fresh-blog-link {
+  color: rgb(34, 34, 34);
   text-decoration: none;
-
 }
-a:hover {
+
+.fresh-blog-link:hover {
   text-decoration: none;
-  color: black;
+  color: rgb(34, 34, 34);
 }
 
 .bloglink {

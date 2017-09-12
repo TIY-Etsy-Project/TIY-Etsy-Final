@@ -20,12 +20,12 @@
   padding: 1em;
 }
 
-a {
+.footer-link {
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
 

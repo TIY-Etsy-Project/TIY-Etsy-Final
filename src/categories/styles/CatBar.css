@@ -7,35 +7,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 1vw;
-}
-
-.card-container {
-  margin: -39vw 0 0 16vw;
-}
-
-.catBarColumn {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  position: absolute;
-  margin-left: 1.50vw;
-  z-index: 2;;
 }
 
 .catBarCard {
   display: flex;
   flex-flow: column nowrap;
-  margin-left: 2vw;
-  padding: none;
-  width: 16.9vw;
+  margin-left: 2.5vw;
+  padding: 0px;
+  width: 231px;
+  height: 1055px;
 }
-
 
 
 /* Category links styling */
 
 .allCatColumn {
+  font-size: .87em;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -43,16 +30,24 @@ body {
   margin: 0 1vw 0 1vw;
 }
 .categoryList {
+  font-weight: 400;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   list-style: none;
+  margin: 0px;
+  padding: 0 0 10px 10px;
+}
+
+.categoryList li {
+  height: 1.5em;
+  margin: 0px;
 }
 
 .allCategories {
-  font-weight: 700;
+  font-weight: 600;
   color: #7a7a7a;
-  margin: 1vw 0vw .3vw 0;
+  margin: 1vw 0 0 0;
 }
 
 
@@ -66,12 +61,6 @@ li {
   color: #7a7a7a;
 }
 
-.container {
-  width: 70vw;
-  margin: 0;
-  position: relative;
-  z-index: -1;
-}
 
 .grid-items {
   width: 15vw;
@@ -87,65 +76,91 @@ li {
 
 /* Shop Location Styling */
 
-.shopLocationColumn {
+.shopLocationContainer {
+  font-size: .87em;
   color: #7a7a7a;
+  height: 158px;
+  width: 200px;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   border-bottom: .25px solid #dbdbdb;
-  margin: .75vw 1vw 0 1vw;
+  margin: 1vw 1vw 0 15px;
+  padding-top: 5px;
 }
 
 #shopLocation {
   font-weight: 700;
-  margin-top: .5vw;
+  margin: 0px 0px 5px 0px;
+}
+
+.shopLocation {
+  height: 20px;
+  margin-top: 3px;
+}
+
+.shop-location-buttons {
+  margin-bottom: 10px;
+}
+
+.radio-container {
+  height: 21px;
+  margin: 0px!important;
+}
+
+.radio-button {
+  margin-top: 0px!important;
 }
 
 input[type=radio] + label {
-  font-weight: 400;
-  margin: 0 0 .15vw -1.5vw;
+  font-weight: 300;
 }
 
 input[type=radio]:checked + label {
   font-weight: 700;
-  margin: 0 0 .15vw -1.5vw;
 }
 
 
 input[type=radio] {
   opacity: 0;
-  width: 1.6vw;
-  height: 1.6vw;
+  width: 18px;
+  height: 18px;
   position: relative;
+  top: 2px;
+  left: 12px;
   z-index: 2;
   cursor: pointer;
 }
 
 input[type=radio] + label span {
   display: inline-block;
-  width: 1.6vw;
-  height: 1.6vw;
+  width: 18px;
+  height: 18px;
   border: .75px solid #a5a5a5;
   border-radius: 50%;
   background: #FFFFFF;
-  vertical-align: bottom;
+  position: relative;
+  top: 5px;
+  left: -8px;
   cursor: pointer;
 }
 
 input[type=radio]:checked + label span:before {
   content: '⬤';
   color: #f56400;
-  font-size: .85vw;
+  font-size: 10.4px;
   position: absolute;
-  left: 1.4vw;
-  padding-top: .05vw;
+  left: 1.75px;
+  bottom: 1.28px;
   cursor: pointer;
 }
 
 .inputContainer {
+  height: 40px;
   display: flex;
   flex-flow: row nowrap;
   align-items:flex-end;
+  margin: 0 0 2px 15px;
 }
 
 .titleForm {
@@ -153,9 +168,9 @@ input[type=radio]:checked + label span:before {
   font-weight: 300;
   border-radius: 5%;
   border: .25px solid #dbdbdb;
-  width: 9.5vw;
-  height: 2.8vw;
-  margin: .5vw .2vw 1.5vw 2vw;
+  width: 140px;
+  height: 39px;
+  margin: .5vw .2vw 0vw 0px;
 }
 
 .infoSubButton {
@@ -166,7 +181,7 @@ input[type=radio]:checked + label span:before {
   width: 2.8vw;
   height: 2.8vw;
   padding-bottom: 1.5vw;
-  margin: 0 0 1.5vw .2vw;
+  margin: 0 0 0vw .2vw;
 }
 
 .fa-play {
@@ -176,33 +191,64 @@ input[type=radio]:checked + label span:before {
 /* Item type column styling */
 
 .itemTypeContainer {
-  border-bottom: .25px solid #dbdbdb;
-  margin: 0 1vw 0 1vw;
-}
-
-.itemTypeColumn {
+  font-size: .87em;
   color: #7a7a7a;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  margin: .75vw 0 1.5vw 0;
+  height: 125px;
+  width: 200px;
+  border-bottom: .25px solid #dbdbdb;
+  margin: 0 1vw 0 15px;
+  padding-top: 5px;
 }
 
-.priceTitle {
-  font-weight: 700;
-  margin-top: .5vw;
+.item-type-column {
+  padding-top: 10px;
 }
 
 .itemType {
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+}
+
+.radio-container {
+  margin: 0 0 0 -13px!important;
+  width: 150px
+}
+
+.radio-label {
+  font-weight: 300;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 1px;
+}
+
+.price-container {
+  font-size: .87em;
+  color: #7a7a7a;
+  height: 230px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 200px;
+  border-bottom: .25px solid #dbdbdb;
+  margin-left: 15px;
+  padding-top: 15px;
+}
+
+.price-title {
   font-weight: 700;
-  margin-top: .5vw;
+}
+
+.price-title label {
+  margin: 2px;
 }
 
 .priceInputContainer {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  margin-left: 2vw;
+  margin: 7px 0 0 20px;
 }
 
 .customPriceForm {
@@ -210,8 +256,8 @@ input[type=radio]:checked + label span:before {
   font-weight: 300;
   border-radius: 5%;
   border: .25px solid #dbdbdb;
-  width: 3.8vw;
-  height: 2.8vw;
+  width: 56px;
+  height: 37px;
   margin: .5vw .3vw 0 0vw;
 }
 
@@ -224,31 +270,33 @@ input[type=radio]:checked + label span:before {
   background: #FFFFFF;
   border-radius: 5%;
   border: .25px solid #dbdbdb;
-  width: 2.8vw;
-  height: 2.8vw;
-  padding-bottom: 1.5vw;
-  margin-left:.2vw;
+  width: 37px;
+  height: 37px;
+  margin: 6.5px 0 0 5px;
 }
 
 /* Color column styling */
 
 .colorContainer {
+  width: 200px;
   border-bottom: .25px solid #dbdbdb;
-  margin: 0 1vw 0 1vw;
+  margin-left: 15px;
 }
 
 .colorColumn {
-  color: #7a7a7a;
-  margin: 2vw 0 1.5vw 0;
-}
-
-.colorList {
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: -1.8vw;
+  color: #7a7a7a;;
+  margin: 0;
+}
+
+.color-title {
+  font-size: .89em;
+}
+.colorList {
+  font-size: .89em;
+  margin: 0px 0px 0px 20px;
   padding: none;
   margin: none;
 }
@@ -256,37 +304,42 @@ input[type=radio]:checked + label span:before {
 .colorCheckBox {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  margin-left: 2vw;
 }
 
 .colorListItem {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   color: #7a7a7a;
-  margin-bottom: -.7vw;
+  height: 18px;
+}
+
+.colorLabels {
+  height: 17px;
+  position: relative;
 }
 
 .colorListItem input[type="checkbox"] {
   opacity: 0;
-  width: 1.4vw;
-  height: 1.4vw;
+  width: 16px;
+  height: 16px;
   background-color: #FFFFFF;
   color: #ea7532;
-  position: relative;
+  position: absolute;
+  left: 10px;
   z-index: 2;
+  margin: 0px!important;
   cursor: pointer;
-  margin: 0 0 .5vw 0;
 }
 
 .colorListItem input[type="checkbox"] + label span {
   display: inline-block;
-  width: 1.30vw;
-  height: 1.30vw;
-  border: .75px solid #a5a5a5;
+  width: 16px;
+  height: 16px;
+  border: .50px solid #b9b9b9;
   border-radius: 3px;
   background: #FFFFFF;
-  margin: -2vw 0 0 -1.4vw;
+  position: absolute;
+  left: -10px;
   cursor: pointer;
 }
 
@@ -294,30 +347,44 @@ input[type=radio]:checked + label span:before {
   font-family: "FontAwesome";
   content: "\f00c";
   color: #ea7532;
-  font-size: 1.1vw;
+  font-size: 13.5px;
   font-weight: bold;
-  margin-bottom: .25vw;
+  position: absolute;
+  bottom: -7px;
   cursor: pointer;
 }
 
 .showMoreColor {
+  display: block;
   color: #e86c25;
   font-weight: 300vw;
-  margin: -1vw 0 2vw -8vw;
+  margin: 7px 0px 0px 0px;
+  padding-bottom: 9px;
   cursor: pointer;
 }
 
 /*Ordering options*/
 .orderingOptionsColumn {
+  font-size: .89em;
+  font-weight: 300;
   color: #7a7a7a;
+  height: 100px;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   border-bottom: .25px solid #dbdbdb;
-  margin: .75vw 1vw 0 1vw;
+  margin: 0 13px 0 13px;
   text-align: left;
 }
 
+.order-title {
+  padding-top: 15px;
+  margin-left: 4px;
+}
+
+.ordering-container {
+  margin: 5px 0 0 13px;
+}
 
 /*Ship to*/
 .shipToColumn {
@@ -331,7 +398,7 @@ input[type=radio]:checked + label span:before {
 }
 
 .ship-header {
-  margin-bottom: .5vw;
+  margin: 5px 0 5px 0;
 }
 
 .dropdown-container {

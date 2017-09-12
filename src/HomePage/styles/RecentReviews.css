@@ -1,61 +1,57 @@
-#main-wrapper {
+
+#recent-reviews-main-wrapper {
   padding-bottom: 50px;
 }
 
-#title {
+#recent-reviews-title {
   padding-top: 60px;
   text-align: center;
   font-family: 'Lato';
 }
 
 
-#main-wrapper a {
+#recent-reviews-main-wrapper a {
   font-size: 12px;
   color: rgb(68, 68, 68);
   font-weight: 300;
   font-family: 'Lato';
 }
 
-#main-wrapper a:hover {
+#recent-reviews-main-wrapper a:hover {
   text-decoration: underline;
 }
 
-.individual-card {
-  width: 20vw;
+.recent-reviews-all-cards {
+  margin-top: 80px;
+}
+
+.recent-reviews-individual-card {
   background-color: white;
   text-align: center;
-  padding-bottom: 7px;
+  padding-top: 30px;
+  margin-bottom: 80px;
   border-radius: 3px;
 }
 
-span {
-  font-size: 14px;
-  font-family: 'Lato';
+
+/* User Info */
+
+.recent-reviews-user-info {
+  height: 10em;
 }
 
-.user-info p {
+.recent-reviews-user-info span {
   font-size: 14px;
-  color: rgb(68, 68, 68);
-  font-weight: 300;
   font-family: 'Lato';
-}
-
-.user-info span {
   color: rgb(41, 43, 44);
   font-weight: bold;
 }
 
-.user-info {
-  height: 100px;
-}
-
-.star {
-  color: orange;
-}
-
-.info-container {
-  padding: 10px;
-  padding-top: 60px;
+.recent-reviews-user-info p {
+  font-size: 14px;
+  color: rgb(68, 68, 68);
+  font-weight: 300;
+  font-family: 'Lato';
 }
 
 #light-gray {
@@ -63,26 +59,29 @@ span {
   font-weight: 200;
 }
 
-
-.all-cards {
-  margin-top: 80px;
-  width: 100vw;
+.recent-reviews-star {
+  color: orange;
 }
 
-#card-2 {
-  margin-right: 20px;
-  margin-left: 20px;
+.recent-reviews-info-container {
+  padding-top: 60px;
+
 }
 
-#card-3 {
-  margin-right: 60px;
+
+#recent-reviews-card-2 {
+  text-align: center;
 }
 
-#card-1 {
-  margin-left: 60px;
+#recent-reviews-card-3 {
+  text-align: center;
 }
 
-.profile-pics {
+#recent-reviews-card-1 {
+  text-align: center;
+}
+
+.recent-reviews-profile-pics {
   margin-left: auto;
   margin-right: auto;
   width: 80px;
@@ -97,22 +96,25 @@ span {
   transform: translateX(-50%);
 }
 
-#profile-pic-1  {
+#recent-reviews-profile-pic-1  {
   background-image: url('https://img1.etsystatic.com/000/0/5434216/iusa_75x75.5208597.jpg');
 }
 
-#profile-pic-2  {
+#recent-reviews-profile-pic-2  {
   background-image: url('https://img0.etsystatic.com/030/0/18656013/iusa_75x75.27053850_gz25.jpg');
 
 }
 
-#profile-pic-3  {
+#recent-reviews-profile-pic-3  {
   background-image: url('https://img1.etsystatic.com/185/0/90271381/iusa_75x75.52484889_8cwt.jpg');
 }
 
-.product-picture {
+.recent-reviews-product-picture {
   width: 250px;
   height: 250px;
+  max-width: 100%;
+  max-height: 30%;
+  overflow: hidden;
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
@@ -121,15 +123,20 @@ span {
   background-repeat: no-repeat;
 }
 
-#product-picture-1 {
+.recent-reviews-product-description {
+  padding-top: 5px;
+  color: rgb(34, 34, 34);
+}
+
+#recent-reviews-product-picture-1 {
   background-image: url('https://img1.etsystatic.com/005/1/6556719/il_300x300.392033141_oomr.jpg');
 }
 
 
-#product-picture-2 {
+#recent-reviews-product-picture-2 {
   background-image: url('https://img1.etsystatic.com/000/0/5530342/il_300x300.185259095.jpg');
 }
 
-#product-picture-3 {
+#recent-reviews-product-picture-3 {
   background-image: url('https://img0.etsystatic.com/063/1/8384145/il_300x300.799830916_jh04.jpg');
 }

@@ -13,7 +13,7 @@ import RecentReviews from './RecentReviews.js';
 export default class Home extends Component {
   render() {
     return (
-      <div className='Home'>
+      <div className='home'>
           <Carousel />
           <InfoCards />
           <ShopCards type="category" />

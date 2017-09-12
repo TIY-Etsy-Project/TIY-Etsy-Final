@@ -18,9 +18,9 @@ export default class DetailedCatCard extends Component {
     let randomListing = filteredListings[Math.floor(Math.random() * filteredListings.length)];
           return (
             <div key={randomListing.listing_id} className = "detailedCatCardColumn col-md-3">
-              <div className="detailedCatCard card no-gutters" >
+              <div className="card no-gutters detailedCatCard" >
                 <a href={randomListing.url}><img className="card-img-top" src={randomListing.MainImage.url_170x135} alt="random jewelry" /></a>
-                <div className="card-block">
+                <div className="detailed-card-block">
                   <h2 className="card-title">
                     <a className="catTitleLink" href={"https://www.etsy.com/c/" + listing.category.path}>{listing.category.name}</a>
                   </h2>

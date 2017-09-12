@@ -13,7 +13,7 @@
   background: url('../assets/banner.jpg') center/cover no-repeat;
 }
 
-h2 {
+.TrendingPage h2 {
   width: 650px;
   margin-left: 10vw;
   margin-top: 53px;
@@ -22,7 +22,7 @@ h2 {
   font-family: "Bitter";
 }
 
-h1 {
+.TrendingPage h1 {
   font-family: "Bitter";
   display: block;
   font-size: 1.5em;
