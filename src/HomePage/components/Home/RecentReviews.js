@@ -9,7 +9,7 @@ class RecentReviews extends Component {
           <h2 id="recent-reviews-title">Recent reviews from happy people</h2>
             <div className="recent-reviews-all-cards">
               <div className="row">
-                <div className="col-md-4 col-sm-12" >
+                <div className="col-lg-4 col-sm-12" >
                   <div className="recent-reviews-individual-card card-block" id="recent-reviews-card-1">
                     <div className="recent-reviews-profile-pics" id="recent-reviews-profile-pic-1"></div>
                     <div className="recent-reviews-info-container">

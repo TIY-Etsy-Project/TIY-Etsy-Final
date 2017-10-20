@@ -5,7 +5,7 @@ class FreshBlog extends Component {
   render() {
     return (
       <div>
-      <h2 className="blogtitle"><a href="https://blog.etsy.com/en/?ref=hpsh">Fresh From The Blog</a></h2>
+      <h2 className="blogtitle">Fresh From the Blog</h2>
       <div className="row wholeblog">
         <div className="col-sm-4">
           <div className="card blogcard fresh-blog-card-block">

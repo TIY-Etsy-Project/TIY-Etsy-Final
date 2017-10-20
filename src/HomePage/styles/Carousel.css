@@ -17,19 +17,21 @@
 .carousel-item h2 {
   text-align: left;
   padding-left: 0;
+  padding-bottom: 20px;
   margin-left: 0;
-  padding-bottom: 30px;
   color: #323232;
   font-weight: 100;
-  font-size: 3.5em;
+  font-size: 3em;
   font-family: serif;
 }
 
-.carousel-text.carousel-caption{
+
+.carousel-caption {
   width: 35%;
   text-align: left;
   left: 10%;
   text-shadow: none;
+  margin: 20px 0px;
 }
 
 .image-background {
@@ -138,4 +140,11 @@
 
 .carousel-indicators .active {
     background: gray;
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .carousel-item h2 {
+    font-size: 2em;
+  }
 }

@@ -3,6 +3,8 @@ import fetchJsonp from "fetch-jsonp";
 
 import CatCard from './CatBody/CatCards.js';
 import DetailedCatCard from './CatBody/DetailedCatCards.js';
+import ProductCards from "./CatBody/ProductCards";
+import PageCounter from "./PageCounter";
 
 import '../styles/CatBody.css';
 import "../styles/spinner.css";
@@ -18,7 +20,7 @@ class CatBody extends Component {
   };
 
   componentDidMount() {
-    fetchJsonp('https://api.etsy.com/v2/listings/trending.js?callback=getData&api_key=3yhxu7gn2ot24so9hzuqbxc9&explicit=1&amp;min=&amp;max=&amp;price_bucket=1&amp;use_mmx=1&&limit=100&offset=0&page=1&category=clothing&category=Accessories&category=paper_party_supplies&category=weddings&bags_and_purses&category=art_and_collectibles&category=jewelry&category=home_and_living&category=craft_supplies_and_tools&sort_on=score&sort_order=down&includes=MainImage')
+    fetchJsonp('https://api.etsy.com/v2/listings/trending.js?callback=getData&api_key=nrfza0h31bu4g5biq6bq6g4c&explicit=1&amp;min=&amp;max=&amp;price_bucket=1&amp;use_mmx=1&&limit=100&offset=0&page=1&category=clothing&category=Accessories&category=paper_party_supplies&category=weddings&bags_and_purses&category=art_and_collectibles&category=jewelry&category=home_and_living&category=craft_supplies_and_tools&sort_on=score&sort_order=down&includes=MainImage')
     .then(resp => {
       return resp.json()
     })
@@ -26,7 +28,7 @@ class CatBody extends Component {
         let listings = resp.results;
         this.setState({listings: listings});
       })
-    }
+  }
 
 
   render() {
@@ -159,24 +161,32 @@ class CatBody extends Component {
             id: 143
           }}
         ];
-          return (
-            <div>
-              {this.state.listings.length > 0 ? (
-              <div className = "container catBodyContainer">
-                <div className="row detailed-card-row">
-                  <DetailedCatCard detailedCategories={detailedCategories}
-                                   etsyListings={this.state.listings} />
-                </div>
+      return (
+        <div className=" col-sm-9 card-column">
+          {this.state.listings.length > 0 ? (
+              <div>
+                <DetailedCatCard detailedCategories={detailedCategories}
+                                 etsyListings={this.state.listings} />
                 <CatCard categories={categories}
-                           etsyListings={this.state.listings} />
+                         etsyListings={this.state.listings} />
+                <ProductCards prodListings={this.props.prodListings}
+                              under25={this.props.under25}
+                              between25_50={this.props.between25_50}
+                              between50_100={this.props.between50_100}
+                              over100={this.props.over100}
+                              selectedOption={this.props.selectedOption}/>
+                <div className="pageCounter-controller">
+                  <PageCounter />
                 </div>
-              ) : (
-              <div className="lds-spinner"></div>
-              )}
-            </div>
-          )
-    }
+              </div>
+            ) : (
+              <div></div>
+            )}
+      </div>
+    )
   }
+}
+
 
 
 export default CatBody

@@ -1,3 +1,9 @@
+body {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+
 .App {
   background-color: #FFFFFF;
   text-align: left;
@@ -19,17 +25,30 @@
   font-size: large;
 }
 
-/*.app-container {
-  margin: 0px!important;
-}*/
+.app-container {
+  width: 100vw;
+}
 
 .category-header {
   width: 100vw;
 }
 
 .allCatTitle {
-  font-size: 2em;
+  font-size: 1.75em;
   color: #474747;
   text-align: left;
-  margin: 3vw 0 1.5vw 1.5vw;
+  margin: 3vw 0 0 2vw;
+}
+
+.body-container {
+  width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vw;
+}
+
+.body-row {
+  width: 96vw;
+  margin: 0px;
 }

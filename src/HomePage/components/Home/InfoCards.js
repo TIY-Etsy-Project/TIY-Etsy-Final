@@ -4,11 +4,10 @@ import "../../styles/InfoCards.css";
 class InfoCards extends Component {
   render() {
     return (
-      <div className="infoCardContainer ">
-        <div className="col-sm-4">
-          <div className="card infocard">
-            <div className="card-block">
-              <div className="infoCardBlock">
+      <div className="container-fluid" id="bootstrap-override">
+        <div className="row">
+            <div className="col-md-4 card infocard">
+              <div className="card-block card-container">
                 <div className="infoCardCol-1">
                   <img
                     className="card-img-top infoCardIcon" alt="Icon of women"
@@ -16,7 +15,7 @@ class InfoCards extends Component {
                   />
                 </div>
 
-                <div className="infoCardCol-2" colspan="2">
+                <div className="infoCardCol-2">
                   <h5 className="card-title">Get something you love</h5>
                   <p className="card-text">
                     Our marketplace is a world of vintage and handmade goods
@@ -24,13 +23,9 @@ class InfoCards extends Component {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="col-sm-4">
-          <div className="card infocard">
-            <div className="card-block">
-              <div className="infoCardBlock">
+            <div className="col-md-4 card infocard">
+              <div className="card-block card-container">
                 <div className="infoCardCol-1">
                   <img
                     className="card-img-top infoCardIcon" alt="Man with cauldron of soup"
@@ -45,31 +40,26 @@ class InfoCards extends Component {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="col-sm-4">
-          <div className="card infocard">
-            <div className="card-block">
-              <div className="infoCardBlock">
-                <div className="infoCardCol-1">
-                  <img
-                    className="card-img-top infoCardIcon"
-                    alt="Two hands tieing a present"
-                    src={require("./images/infocard-3.png")}
-                  />
-                </div>
-                <div className="infoCardCol-2">
-                  <h5 className="card-title">Buy safely and securely</h5>
-                  <p className="card-text">
-                    Etsy protects every transaction, so shop with confidence
-                  </p>
+            <div className="col-md-4 card infocard">
+              <div className="card-block card-container">
+                  <div className="infoCardCol-1">
+                    <img
+                      className="card-img-top infoCardIcon"
+                      alt="Two hands tieing a present"
+                      src={require("./images/infocard-3.png")}
+                    />
+                  </div>
+                  <div className="infoCardCol-2">
+                    <h5 className="card-title">Buy safely and securely</h5>
+                    <p className="card-text">
+                      Etsy protects every transaction, so shop with confidence
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     );
   }
 }

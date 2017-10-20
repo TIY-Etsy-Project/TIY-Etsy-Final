@@ -19,9 +19,9 @@ class CatCard extends Component {
       });
     let randomListing = filteredListings[Math.floor(Math.random() * filteredListings.length)];
         return (
-          <div className="category-card-column">
+          <div className="col-md justify-content-between category-card-column">
             <div key={randomListing.listing_id} >
-              <div className="card catCards" >
+              <div className="card no-gutters catCards" >
                 <a href={randomListing.url}><img className="card-img-top" src={randomListing.MainImage.url_170x135} alt="random jewelry" /></a>
                 <div className="card-block">
                   <h2 className="card-title">
@@ -34,7 +34,7 @@ class CatCard extends Component {
         )
     })
     return (
-      <div className = "cat-card-row">
+      <div className = "row justify-content-between">
         {catCard}
       </div>
     )

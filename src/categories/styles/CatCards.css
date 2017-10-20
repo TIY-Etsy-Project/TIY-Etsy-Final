@@ -1,21 +1,28 @@
 .cat-card-row {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 917px;
-  justify-content: space-between;
-  margin: 0px;
+  margin-bottom: 1vw;
 }
+
 .category-card-column {
-  column-width: 165px;
+  padding: 0 .75vw 0 .75vw;
 }
 
 .catCards {
-  width: 165px;
+  height: 16vw;
   margin-bottom: 0px;
 }
 
+.card-block {
+  text-align: left;
+  padding: 15px;
+  padding-top: 15px;
+}
+
 .card {
-  margin: none;
+  margin: auto;
+}
+
+.card-title {
+  font-size: 1.2em;
 }
 
 .catTitleLink {

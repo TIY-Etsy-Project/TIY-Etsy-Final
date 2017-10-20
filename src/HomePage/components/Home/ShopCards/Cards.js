@@ -58,7 +58,7 @@ export default class Cards extends Component {
             let render = randomArray.map((categoryObj) => {
                 var category = categoryObj.response;
                 return(
-                    <div key={category.listing_id} className="col-md-2 items padding">
+                    <div key={category.listing_id} className="col-lg-2 col-md-4 col-sm-12 items padding">
                         <a href={category.url}>
                         <div className="card-box">
                             <div id={"card-image" + (increment++)} className="s-card-image">
@@ -86,7 +86,7 @@ export default class Cards extends Component {
               <div className="container-fluid shop-cards-wrapper" id="shop-by-category">
                 <h2 className="shop-cards-title">Shop for gifts</h2>
                 <div className="row" id="shop-by-category-cards">
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://www.etsy.com/featured/summer-gifts-under-30?ref=hp_g">
                         <div className="card-box">
                             <div id="sc-gc-1" className="s-card-image"></div>
@@ -94,7 +94,7 @@ export default class Cards extends Component {
                         </div>
                       </a>
                     </div>
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://www.etsy.com/featured/zodiac?ref=hp_g">
                         <div className="card-box">
                             <div id="sc-gc-2" className="s-card-image"></div>
@@ -102,7 +102,7 @@ export default class Cards extends Component {
                         </div>
                       </a>
                     </div>
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://img0.etsystatic.com/142/1/13994634/il_340x270.1160732882_6na4.jpg">
                         <div className="card-box">
                             <div id="sc-gc-3" className="s-card-image"></div>
@@ -110,7 +110,7 @@ export default class Cards extends Component {
                         </div>
                       </a>
                     </div>
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://www.etsy.com/featured/bath-beauty?ref=hp_g">
                         <div className="card-box">
                             <div id="sc-gc-4" className="s-card-image"></div>
@@ -118,7 +118,7 @@ export default class Cards extends Component {
                         </div>
                       </a>
                     </div>
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://www.etsy.com/featured/personalized-holiday-and-christmas-gifts?ref=hp_g">
                         <div className="card-box">
                             <div id="sc-gc-5" className="s-card-image"></div>
@@ -126,7 +126,7 @@ export default class Cards extends Component {
                         </div>
                       </a>
                     </div>
-                    <div className="col-md-2 items padding">
+                    <div className="col-lg-2 col-md-4 col-sm-12 items padding">
                       <a href="https://www.etsy.com/featured/wedding-party-gifts?ref=hp_g">
                         <div className="card-box">
                             <div id="sc-gc-6" className="s-card-image"></div>

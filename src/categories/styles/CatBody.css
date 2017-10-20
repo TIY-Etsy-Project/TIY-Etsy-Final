@@ -1,17 +1,15 @@
-
-
-.catBodyContainer {
-  width: 900px;
-  padding: 5px;
+/*.catBodyContainer {
+  width: 85vw;
+  padding: 0px;
   margin: 0 2.5vw 1vw 2.5vw;
-}
+}*/
 
-.catCardRow {
+/*.catCardRow {
   margin-left: 1vw;
-}
+}*/
 
 .card-column {
-  width: 1000px!important;
   padding: 0px;
   margin: 0px;
+  margin-left: 2vw;
 }

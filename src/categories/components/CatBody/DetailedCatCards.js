@@ -49,7 +49,7 @@ export default class DetailedCatCard extends Component {
           )
       })
     return (
-      <div className="row">
+      <div className="row justify-content-between">
         {detailedCatCard}
       </div>
     )

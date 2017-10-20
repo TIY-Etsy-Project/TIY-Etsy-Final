@@ -3,7 +3,6 @@ import "../styles/Listing.css";
 
 import ShopHeader from './ShopHeader'
 import LikeBanner from './LikeBanner'
-import ProductImage from './ProductImage'
 import PurchaseInfo from './PurchaseInfo'
 import ProdDesc from './ProdDesc'
 import ShopSidebar from './ShopSidebar'
@@ -26,7 +25,6 @@ class App extends Component {
 				<div className = 'row main-content-div'>
 					<div className='col-6'>
 		      	<LikeBanner listingId={listingId} />
-						<ProductImage listingId={listingId} />
 						<ProdDesc listingId={listingId} />
 					</div>
 					<div className='col-6'>
